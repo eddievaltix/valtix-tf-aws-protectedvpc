@@ -18,7 +18,7 @@
 resource "aws_ec2_transit_gateway_route" "tgw_route1" {
   destination_cidr_block         = var.route_cidr
   transit_gateway_attachment_id  = var.valtix_services_vpc_tgw_attach_id
-  transit_gateway_route_table_id = var.spoke_vpc_attch_route_table_id
+  transit_gateway_route_table_id = var.spoke_vpc_attach_route_table_id
 }
 
 /*
@@ -27,6 +27,6 @@ resource "aws_ec2_transit_gateway_route" "tgw_route1" {
 */
 resource "aws_ec2_transit_gateway_route" "services_vpc_route1" {
   destination_cidr_block         = var.spoke_vpc_cidr
-  transit_gateway_attachment_id  = var.spoke_vpc_attch_id
+  transit_gateway_attachment_id  = var.spoke_vpc_attach_id
   transit_gateway_route_table_id = var.valtix_services_vpc_route_table_id
 }

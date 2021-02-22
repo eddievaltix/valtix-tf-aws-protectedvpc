@@ -17,12 +17,12 @@ resource "aws_ec2_transit_gateway_vpc_attachment" "spoke_vpc_tgw_vpc_attch1" {
   appliance_mode_support                          = "true"
 }
 
-#create the route table for the protected VPC attachment
+// create the route table for the protected VPC attachment
 resource "aws_ec2_transit_gateway_route_table" "spoke_vpc_tgw_vpc_attch_rt1" {
   transit_gateway_id = var.transit_gateway_id
 }
 
-#associate the protected vpc attachment transit gateway route table to the protected vpc attachment using created resource
+// associate the protected vpc attachment transit gateway route table to the protected vpc attachment using created resource
 resource "aws_ec2_transit_gateway_route_table_association" "this" {
   transit_gateway_attachment_id  = aws_ec2_transit_gateway_vpc_attachment.spoke_vpc_tgw_vpc_attch1.id
   transit_gateway_route_table_id = aws_ec2_transit_gateway_route_table.spoke_vpc_tgw_vpc_attch_rt1.id
