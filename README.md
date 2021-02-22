@@ -15,5 +15,5 @@ This template example shows how to create subnet routes in the spoke VPC to Tran
 ## Example Usage
 ```hcl
 git clone github.com/eddievaltix/valtix-tf-aws-protectedvpc
-modify examples as required
 ```
+modify examples as required
