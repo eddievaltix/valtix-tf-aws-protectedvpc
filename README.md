@@ -1,5 +1,5 @@
 # Valtix Terraform Protected VPC Example Template
-This example template are the steps needed to secure a Transit Gateway VPC attachment.  
+This example template are the steps needed to secure a spoke VPC in a Valtix AWS Transit Gateway deployment.  
 Consult the Valtix Protected VPC technote to see all the steps that are orchestrated by Valtix UI Protected VPC feature.  Terraform users are expected to orchestrate this using the Terraform AWS resource provider.
 
 We've provided these examples because each customer environment is different and customers can selectively use the templates that they require depending on whether resources are already deployed.
