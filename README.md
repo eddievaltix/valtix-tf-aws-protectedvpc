@@ -8,7 +8,7 @@ We've provided these examples because each customer environment is different and
 This template example creates the Transit Gateway VPC attachment for the spoke VPC as well as a Transit Gateway VPC attachment route table associated with it
 
 ## protectedvpc_tgw_routes
-This template example shows how to create Transit Gateway VPC attachment routes for both the Spoke VPC Transit Gateway attachment as well as the Valtix Gateway Transit Gateway attachment.  This is dependant on Transit Gateway spoke VPC attachment.
+This template example shows how to create Transit Gateway VPC attachment routes for both the Spoke VPC Transit Gateway attachment as well as the Valtix Gateway Transit Gateway attachment.  This is dependent on Transit Gateway spoke VPC attachment.
 
 ## protectedvpc_subnet_routes
 This template example shows how to create subnet routes in the spoke VPC to Transit Gateway to allow Transit Gateway routes to direct traffic flow to Valtix Gateways.  This is dependant on Transit Gateway spoke VPC attachment.
